@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "title": "At the Office",
+        "text": "Line 48 gives you an error, but you can't figure out what is wrong with it.",
+        "choices": {
+            "Ask Tristan for help": 3,
+            "Don't ask Tristan for help": 2
+        }
+    },
+    {
+        "id": 2,
+        "title": "At the Office",
+        "text": "You try to continue on your own, but this is way above your current knowledge.",
+        "choices": {
+            "Continue": 1
+        }
+    },
+    {
+        "id": 3,
+        "title": "Asked Tristan For Help",
+        "text": "Tristan gives you an irritated look, but comes over and explains how he would have solved the problem. You continue to work, but you soon run into more errors. What is this database even built on? Hopes and dreams?",
+        "choices": {
+            "Ask Tristan for help": 5,
+            "Don't ask Tristan for help": 4
+        }
+    },
+    {
+        "id": 4,
+        "title": "I know this! Or maybe not...",
+        "text": "You try to continue on your own, but this is way above your current knowledge.",
+        "choices": {
+            "Ask Tristan for help": 5,
+            "Don't ask Tristan for help": 4
+        }
+    },
+    {
+        "id": 5,
+        "title": "Asked Tristan For More Help",
+        "text": "You take a peek above your monitor to ask Tristan, but he doesn't seem to either see or hear you.",
+        "choices": {
+            "Walk over to his desk": 6,
+            "Don't ask Tristan for help": 4
+        }
+    },
+    {
+        "id": 6,
+        "title": "Walked Over to Tristan's Desk",
+        "text": "You walk over to Tristan's desk and pick your finger on his shoulder to get his attention. He quickly closes down what he had up on his computer. The only thing you managed to spot was the name Kurwenal and a cat. Tristan looks at you, annoyed, but he answers your question. You continue to work. You're curious though. What exactly is 'Kurwenal'?",
+        "choices": {
+            "Investigate further": 7,
+            "Don't investigate further": 8
+        }
+    },
+    {
+        "id": 7,
+        "title": "Investigated Further",
+        "text": "You try to investigate it further, but the files about it on Merkeware's servers seem to be locked.",
+        "choices": {
+            "Ask Tristan about 'Kurwenal'": 9,
+            "Forget about it": 8
+        }
+    },
+    {
+        "id": 8,
+        "title": "Eh Whatever. It's probably nothing important.",
+        "text": "You finish the extremely boring internship and graduate university. You didn't really learn a lot, because Merkeware's code was terribly build, but you did earn a new enemy: Tristan. You're certain you will despise that man for the rest of your life."
+    },
+    {
+        "id": 9,
+        "title": "What is 'Kurwenal'?",
+        "text": "Tristan tells you to not worry about it. Your work day is now over.",
+        "choices": {
+            "Continue": 10
+        }
+    },
+    {
+        "id": 10,
+        "title": "The Next Day",
+        "text": "You are sad becaues of your dog that died  the other day. You had forgotten to register Melot as a pet, and as a punishment, Merkeware Inc. killed him. That's at least what you think. That's what Merkeware does to those who don't obey.",
+        "choices": {
+            "Walk straight to your desk": 11,
+            "Take a peek at Tristan's computer": 12
+        }
+    },
+    {
+        "id": 11,
+        "title": "Time To Do My Work!",
+        "text": "You walk back to your desk and continue with your work",
+        "choices": {
+            "Continue": 8
+        }
+    },
+    {
+        "id": 12,
+        "title": "What Is Tristan Doing?",
+        "text": "You spot the same cat as yesterday, as well as an image of... your dog?",
+        "choices": {
+            "Ask Tristan about the image": 13,
+            "Go to your desk": 11
+        }
+    },
+    {
+        "id": 13
+    }
+]
