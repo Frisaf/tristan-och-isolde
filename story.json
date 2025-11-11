@@ -97,10 +97,194 @@
         "text": "You spot the same cat as yesterday, as well as an image of... your dog?",
         "choices": {
             "Ask Tristan about the image": 13,
-            "Go to your desk": 11
+            "Go to your desk": 11,
+            "Quietly observe Tristan's work from behind": 17
         }
     },
     {
-        "id": 13
+        "id": 13,
+        "title": "What is that, Tristan?",
+        "text": "Tristan gives you an angry look and minimizes the window. He tells you that it's none of your business.",
+        "choices": {
+            "Insist": 15,
+            "Accept the answer": 14
+        }
+    },
+    {
+        "id": 14,
+        "title": "Accepted the answer",
+        "text": "You can hear Tristan sigh behind you and give you an angry look.",
+        "choices": {
+            "Continue": 19
+        }
+    },
+    {
+        "id": 15,
+        "title": "Insisted More",
+        "text": "Tristan tells you it's secret and that you should mind your own business. If you don't, he will call secrutiy on you.",
+        "choices": {
+            "Insist": 16,
+            "Accept the answer": 14
+        }
+    },
+    {
+        "id": 16,
+        "title": "Too Curious",
+        "text": "Tristan calls safety on you, and you are sentenced to a life time in prison for espionage."
+    },
+    {
+        "id": 17,
+        "title": "Watching From Behind",
+        "text": "Tristan doesn't notice you. He has a report up, which describes the death of your dog in detail. He poisoned your dog.",
+        "choices": {
+            "Go back to your desk": 19,
+            "Continue to watch Tristan's work": 18
+        }
+    },
+    {
+        "id": 18,
+        "title": "Nothing To See Here",
+        "text": "Tristan notices you.",
+        "choices": {
+            "Continue": 13
+        }
+    },
+    {
+        "id": 19,
+        "title": "I Got What I Wanted",
+        "text": "You walk back to your desk. You are thinking if you should tell your best friend Brangäne about what you just saw.",
+        "choices": {
+            "Tell Brangäne": 20,
+            "Don't tell Brangäne": 25 
+        }
+    },
+    {
+        "id": 20,
+        "title": "You Won't Believe What Just Happened",
+        "text": "You tell Brangäne about what you just saw, and you tell her that you are planning to murder Tristan by giving him a glass of milk, because he is extremely lactose intolerant. She tells you it's an extremely bad idea.",
+        "choices": {
+            "Listen to Brangäne": 21,
+            "Don't listen to Brangäne": 22
+        }
+    },
+    {
+        "id": 21,
+        "title": "Okay, Maybe It Wasn't Such A Good Idea",
+        "text": "You listen to Brangäne's advice. Murder isn't a good idea. Although you now have a deep and burning hate for Tristan, you manage to rein it in and finish your internship. You graduate university, feeling betrayed."
+    },
+    {
+        "id": 22,
+        "title": "I Have To Kill Him",
+        "text": "You insist that you have to this in order to avenge Melot. You walk to the kitched to prepare the glass of milk. You pour it into an opaque mug with a lid to prevent Tristan from seeing the mug's contents.",
+        "choices": {
+            "Continue": 100
+        }
+    },
+    {
+        "id": 100,
+        "title": "Roll Dice",
+        "text": "Roll a D20",
+        "choices": {
+            "Rolled 10 or above - Continue": 23,
+            "Rolled below 10 - Continue": 101
+        }
+    },
+    {
+        "id": 101,
+        "title": "Rolled Below 10",
+        "text": "You rolled below 10",
+        "choices": {
+            "Continue": 24
+        }
+    },
+    {
+        "id": 23,
+        "title": "Noticed Brangäne",
+        "text": "You notice that Brangäne too is in the kitchen. She puts back a carton of lactose free milk in the fridge and walks back to her department with a mug that looks exactly like yours. They must be pretty popular.",
+        "choices": {
+            "Continue": 24
+        }
+    },
+    {
+        "id": 24,
+        "title": "Assassination Time",
+        "text": "You walk back to the office. You offer the milk to Tristan, and he accepts it without giving it a second thought. You take a seat at your desk again and wait for Tristan's death to come.",
+        "choices": [
+            {
+                "target": 25,
+                "text": "Continue",
+                "requirement": 20
+            },
+            {
+                "target": 30,
+                "text": "Continue",
+                "requirement": 25
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "title": "Waiting",
+        "text": "You wait for what feels like an eternity, but nothing happens. You start to think about this decision, and realize that maybe you have targeted the wrong person. Maybe it is not Tristan who's the enemy. Maybe it is Merke, whom Tristan probably got his orders from.",
+        "choices": {
+            "Approach Tristan and say sorry": 26
+        }
+    },
+    {
+        "id": 26,
+        "title": "The Realization",
+        "text": "You stand up and walk over to Tristan. He thanks you for the lactose free milk.",
+        "choices": [
+            {
+                "target": 26,
+                "text": "Continue",
+                "requirement": 23
+            },
+            {
+                "target": 29,
+                "text": "Continue",
+                "requirement": 101
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "title": "The Lactose Free Milk",
+        "text": "At first, you are a bit confused as to what exactly Tristan is talking about. Then you remember Brangäne and the lactose free milk in the kitched a bit earlier. She switched out the regular milk for lactose free milk. You tell him that it was no problem.",
+        "choices": {
+            "Continue": 28
+        }
+    },
+    {
+        "id": 28,
+        "title": "A Happy End",
+        "text": "Tristan sighs and apologizes for killing Melot. He had no choice, he tells you. You accept the apology and you become friends. You realize that the real enemy is Merkeware Inc. and Tristan decides to quit working at Merkeware Inc. as soon as you have finished your internship. You graduate university, and you have gained a really good friend."
+    },
+    {
+        "id": 29,
+        "title": "The Lactose Free Milk?",
+        "text": "You look at him, confused. Did you accidentally take lactose free milk instead of regular milk? It doesn't matter now. You were lucky that you didn't kill him. That might have been the biggest mistake in your entire life.",
+        "choices": {
+            "Continue": 28
+        }
+    },
+    {
+        "id": 30,
+        "title": "Waiting",
+        "text": "You wait for what feels like an eternity. Suddenly, you hear heavy breaths from the other side of the table, and then a thud. You peek above your monitor and see Tristan lie still on the floor.",
+        "choices": {
+            "Call security": 32,
+            "Escape": 31
+        }
+    },
+    {
+        "id": 31,
+        "title": "Time To Go!",
+        "text": "You realize it might be best to escape before somebody notices that you are there, so you do. You return the other day, and everything is back to normal, just as you had expected. Any trace of Tristan is gone, as usual when somebody within Merkeware dies. You finish your internship, and graduate university with a burning hate for Tristan, but also for Merkeware Inc."
+    },
+    {
+        "id": 32,
+        "title": "Called Security",
+        "text": "You call security, and within minutes they are there. They examine the body, and the mig. Since you were the only person in the room, you get arrested for the murder, and since your fingerprings were found on the mug, you get sentenced to a lifetime in prison for murder."
     }
 ]
