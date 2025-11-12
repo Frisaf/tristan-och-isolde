@@ -2,6 +2,7 @@ import express from "express";
 import fs from "fs";
 
 const router = express.Router();
+const story_file = JSON.parse((fs.readFileSync("./story.json")))
 
 router.get("/", (req, res) => {
     res.render("index.njk", {
@@ -17,10 +18,20 @@ router.get("/story", (req, res) => {
     });
 });
 
-router.get("/:id", (req, res) => {
-    const id = req.params.id
+router.get("/story_page/:id", (req, res) => {
+    const page = story_file.find(m => m.id === +req.params.id)
 
-    res.render("")
+    if (page) {
+        res.render("story_page.njk", {
+            title: page.title,
+            message: page.text,
+            choices: page.choices
+        })
+    }
+
+    else {
+        res.status(404).json({error: "Page not found"})
+    }
 })
 
 export default router;
