@@ -3,63 +3,102 @@
         "id": 1,
         "title": "At the Office",
         "text": "Line 48 gives you an error, but you can't figure out what is wrong with it.",
-        "choices": {
-            "Ask Tristan for help": 3,
-            "Don't ask Tristan for help": 2
-        }
+        "choices": [
+            {
+                "target": 3,
+                "text": "Ask Tristan for help"
+            },
+            {
+                "target": 2,
+                "text": "Don't ask Tristan for help"
+            }
+        ]
     },
     {
         "id": 2,
         "title": "At the Office",
         "text": "You try to continue on your own, but this is way above your current knowledge.",
-        "choices": {
-            "Continue": 1
-        }
+        "choices": [
+            {
+                "target": 1,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 3,
         "title": "Asked Tristan For Help",
         "text": "Tristan gives you an irritated look, but comes over and explains how he would have solved the problem. You continue to work, but you soon run into more errors. What is this database even built on? Hopes and dreams?",
-        "choices": {
-            "Ask Tristan for help": 5,
-            "Don't ask Tristan for help": 4
-        }
+        "choices": [
+            {
+                "target": 5,
+                "text": "Ask Tristan for help"
+            },
+            {
+                "target": 4,
+                "text": "Don't ask Tristan for help"
+            }
+        ]
     },
     {
         "id": 4,
         "title": "I know this! Or maybe not...",
         "text": "You try to continue on your own, but this is way above your current knowledge.",
-        "choices": {
-            "Ask Tristan for help": 5,
-            "Don't ask Tristan for help": 4
-        }
+        "choices": [
+            {
+                "target": 5,
+                "text": "Ask Tristan for help"
+            },
+            {
+                "target": 4,
+                "text": "Don't ask Tristan for help"
+            }
+        ]
     },
     {
         "id": 5,
         "title": "Asked Tristan For More Help",
         "text": "You take a peek above your monitor to ask Tristan, but he doesn't seem to either see or hear you.",
-        "choices": {
-            "Walk over to his desk": 6,
-            "Don't ask Tristan for help": 4
-        }
+        "choices": [
+            {
+                "target": 6,
+                "text": "Walk over to his desk"
+            },
+            {
+                "target": 4,
+                "text": "Don't ask Tristan for help"
+            }
+        ]
     },
     {
         "id": 6,
         "title": "Walked Over to Tristan's Desk",
         "text": "You walk over to Tristan's desk and pick your finger on his shoulder to get his attention. He quickly closes down what he had up on his computer. The only thing you managed to spot was the name Kurwenal and a cat. Tristan looks at you, annoyed, but he answers your question. You continue to work. You're curious though. What exactly is 'Kurwenal'?",
-        "choices": {
-            "Investigate further": 7,
-            "Don't investigate further": 8
-        }
+        "choices": [
+            {
+                "target": 7,
+                "text": "Investigate further"
+            },
+            {
+                "target": 8,
+                "text": "Don't investigate further"
+            }
+        ]
     },
     {
         "id": 7,
         "title": "Investigated Further",
         "text": "You try to investigate it further, but the files about it on Merkeware's servers seem to be locked.",
-        "choices": {
-            "Ask Tristan about 'Kurwenal'": 9,
-            "Forget about it": 8
-        }
+        "choices": [
+            {
+                "target": 9,
+                "text": "Ask Tristan about 'Kurwenal'"
+            },
+            {
+                "target": 8,
+                "text": "Forget about it"
+            }
+        ]
     },
     {
         "id": 8,
@@ -70,62 +109,98 @@
         "id": 9,
         "title": "What is 'Kurwenal'?",
         "text": "Tristan tells you to not worry about it. Your work day is now over.",
-        "choices": {
-            "Continue": 10
-        }
+        "choices": [
+            {
+                "target": 10,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 10,
         "title": "The Next Day",
         "text": "You are sad becaues of your dog that died  the other day. You had forgotten to register Melot as a pet, and as a punishment, Merkeware Inc. killed him. That's at least what you think. That's what Merkeware does to those who don't obey.",
-        "choices": {
-            "Walk straight to your desk": 11,
-            "Take a peek at Tristan's computer": 12
-        }
+        "choices": [
+            {
+                "target": 11,
+                "text": "Walk straight to your desk"
+            },
+            {
+                "target": 12,
+                "text": "Take a peek at Tristan's computer"
+            }
+        ]
     },
     {
         "id": 11,
         "title": "Time To Do My Work!",
         "text": "You walk back to your desk and continue with your work",
-        "choices": {
-            "Continue": 8
-        }
+        "choices": [
+            {
+                "target": 8,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 12,
         "title": "What Is Tristan Doing?",
         "text": "You spot the same cat as yesterday, as well as an image of... your dog?",
-        "choices": {
-            "Ask Tristan about the image": 13,
-            "Go to your desk": 11,
-            "Quietly observe Tristan's work from behind": 17
-        }
+        "choices": [
+            {
+                "target": 13,
+                "text": "Ask Tristan about the image"
+            },
+            {
+                "target": 11,
+                "text": "Go to your desk"
+            },
+            {
+                "target": 17,
+                "text": "Quietly observe Tristan's work from behind"
+            }
+        ]
     },
     {
         "id": 13,
         "title": "What is that, Tristan?",
         "text": "Tristan gives you an angry look and minimizes the window. He tells you that it's none of your business.",
-        "choices": {
-            "Insist": 15,
-            "Accept the answer": 14
-        }
+        "choices": [
+            {
+                "target": 15,
+                "text": "Insist"
+            },
+            {
+                "target": 14,
+                "text": "Accept the answer"
+            }
+        ]
     },
     {
         "id": 14,
         "title": "Accepted the answer",
         "text": "You can hear Tristan sigh behind you and give you an angry look.",
-        "choices": {
-            "Continue": 19
-        }
+        "choices": [
+            {
+                "target": 19,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 15,
         "title": "Insisted More",
         "text": "Tristan tells you it's secret and that you should mind your own business. If you don't, he will call secrutiy on you.",
-        "choices": {
-            "Insist": 16,
-            "Accept the answer": 14
-        }
+        "choices": [
+            {
+                "target": 16,
+                "text": "Insist"
+            },
+            {
+                "target": 14,
+                "text": "Accept the answer"
+            }
+        ]
     },
     {
         "id": 16,
@@ -136,36 +211,57 @@
         "id": 17,
         "title": "Watching From Behind",
         "text": "Tristan doesn't notice you. He has a report up, which describes the death of your dog in detail. He poisoned your dog.",
-        "choices": {
-            "Go back to your desk": 19,
-            "Continue to watch Tristan's work": 18
-        }
+        "choices": [
+            {
+                "target": 19,
+                "text": "Go back to your desk"
+            },
+            {
+                "target": 18,
+                "text": "Continue to watch Tristan's work"
+            }
+        ]
     },
     {
         "id": 18,
         "title": "Nothing To See Here",
         "text": "Tristan notices you.",
-        "choices": {
-            "Continue": 13
-        }
+        "choices": [
+            {
+                "target": 13,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 19,
         "title": "I Got What I Wanted",
         "text": "You walk back to your desk. You are thinking if you should tell your best friend Brangäne about what you just saw.",
-        "choices": {
-            "Tell Brangäne": 20,
-            "Don't tell Brangäne": 25 
-        }
+        "choices": [
+            {
+                "target": 20,
+                "text": "Tell Brangäne"
+            },
+            {
+                "target": 25,
+                "text": "Don't tell Brangäne"
+            }
+        ]
     },
     {
         "id": 20,
         "title": "You Won't Believe What Just Happened",
         "text": "You tell Brangäne about what you just saw, and you tell her that you are planning to murder Tristan by giving him a glass of milk, because he is extremely lactose intolerant. She tells you it's an extremely bad idea.",
-        "choices": {
-            "Listen to Brangäne": 21,
-            "Don't listen to Brangäne": 22
-        }
+        "choices": [
+            {
+                "target": 21,
+                "text": "Listen to Brangäne"
+            },
+            {
+                "target": 22,
+                "text": "Don't listen to Brangäne"
+            }
+        ]
     },
     {
         "id": 21,
@@ -176,34 +272,49 @@
         "id": 22,
         "title": "I Have To Kill Him",
         "text": "You insist that you have to this in order to avenge Melot. You walk to the kitched to prepare the glass of milk. You pour it into an opaque mug with a lid to prevent Tristan from seeing the mug's contents.",
-        "choices": {
-            "Continue": 100
-        }
+        "choices": [
+            {
+                "target": 100,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 100,
         "title": "Roll Dice",
         "text": "Roll a D20",
-        "choices": {
-            "Rolled 10 or above - Continue": 23,
-            "Rolled below 10 - Continue": 101
-        }
+        "choices": [
+            {
+                "target": 23,
+                "text": "Rolled 10 or above - Continue"
+            },
+            {
+                "target": 101,
+                "text": "Rolled below 10 - Continue"
+            }
+        ]
     },
     {
         "id": 101,
         "title": "Rolled Below 10",
         "text": "You rolled below 10",
-        "choices": {
-            "Continue": 24
-        }
+        "choices": [
+            {
+                "target": 24,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 23,
         "title": "Noticed Brangäne",
         "text": "You notice that Brangäne too is in the kitchen. She puts back a carton of lactose free milk in the fridge and walks back to her department with a mug that looks exactly like yours. They must be pretty popular.",
-        "choices": {
-            "Continue": 24
-        }
+        "choices": [
+            {
+                "target": 24,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 24,
@@ -226,9 +337,12 @@
         "id": 25,
         "title": "Waiting",
         "text": "You wait for what feels like an eternity, but nothing happens. You start to think about this decision, and realize that maybe you have targeted the wrong person. Maybe it is not Tristan who's the enemy. Maybe it is Merke, whom Tristan probably got his orders from.",
-        "choices": {
-            "Approach Tristan and say sorry": 26
-        }
+        "choices": [
+            {
+                "target": 26,
+                "text": "Approach Tristan and say sorry"
+            }
+        ]
     },
     {
         "id": 26,
@@ -251,9 +365,12 @@
         "id": 27,
         "title": "The Lactose Free Milk",
         "text": "At first, you are a bit confused as to what exactly Tristan is talking about. Then you remember Brangäne and the lactose free milk in the kitched a bit earlier. She switched out the regular milk for lactose free milk. You tell him that it was no problem.",
-        "choices": {
-            "Continue": 28
-        }
+        "choices": [
+            {
+                "target": 28,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 28,
@@ -264,18 +381,27 @@
         "id": 29,
         "title": "The Lactose Free Milk?",
         "text": "You look at him, confused. Did you accidentally take lactose free milk instead of regular milk? It doesn't matter now. You were lucky that you didn't kill him. That might have been the biggest mistake in your entire life.",
-        "choices": {
-            "Continue": 28
-        }
+        "choices": [
+            {
+                "target": 28,
+                "text": "Continue"
+            }
+        ]
     },
     {
         "id": 30,
         "title": "Waiting",
         "text": "You wait for what feels like an eternity. Suddenly, you hear heavy breaths from the other side of the table, and then a thud. You peek above your monitor and see Tristan lie still on the floor.",
-        "choices": {
-            "Call security": 32,
-            "Escape": 31
-        }
+        "choices": [
+            {
+                "target": 32,
+                "text": "Call security"
+            },
+            {
+                "target": 31,
+                "text": "Escape"
+            }
+        ]
     },
     {
         "id": 31,
