@@ -6,11 +6,13 @@
     <h1>{{ title }}</h1>
     <p><em>{{ message }}</em></p>
     
-    {% for choice in choices %}
-        <p><a href="/story_page/{{ choice.target }}">{{ choice.text }}</a></p>
-    {% else %}
-        <p>You reached the end!</p>
-    {% endfor %}
+    <ol>
+        {% for choice in choices %}
+            <li><a href="/story_page/{{ choice.target }}">{{ choice.text }}</a></li>
+        {% else %}
+            <p>You reached the end!</p>
+        {% endfor %}
+    </ol>
 </main>
 
 {% endblock %}

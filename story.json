@@ -243,7 +243,7 @@
                 "text": "Tell Brangäne"
             },
             {
-                "target": 25,
+                "target": 33,
                 "text": "Don't tell Brangäne"
             }
         ]
@@ -412,5 +412,16 @@
         "id": 32,
         "title": "Called Security",
         "text": "You call security, and within minutes they are there. They examine the body, and the mig. Since you were the only person in the room, you get arrested for the murder, and since your fingerprings were found on the mug, you get sentenced to a lifetime in prison for murder."
+    },
+    {
+        "id": 33,
+        "title": "I Will Carry This To My Grave",
+        "text": "You decide that you need to murder Tristan in order to avenge Melot. You walk back to the kitchen to prepare a glass of milk. Since Tristan is extremely lactose intolerant, he will probably die instantly if he drinks it. You pour the milk into an opaque mug with a lid to prevent Tristan from seeing the mug's contents.",
+        "choices": [
+            {
+                "target": 24,
+                "text": "Continue"
+            }
+        ]
     }
 ]
