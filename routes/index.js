@@ -34,4 +34,6 @@ router.get("/story_page/:id", (req, res) => {
     }
 })
 
+// req.session.history somewhere
+
 export default router;

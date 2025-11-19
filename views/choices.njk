@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<main>
+    <h1>Your Choices</h1>
+
+    {% if choices.length > 0 %}
+        <ul>
+            {% for choice in choices %}
+                <li>{{ choice }}</li>
+            {% endfor %}
+        </ul>
+        <button id="goBackBtn">Go back</button>
+
+    {% else %}
+        <p>You haven't started the story yet! Go back and press start to begin your epic adventure at Merkeware Inc.</p>
+        <a href="/">Go Back Home</a>
+    {% endif %}
+</main>
+
+{% endblock %}
