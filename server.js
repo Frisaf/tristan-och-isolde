@@ -4,6 +4,7 @@ import morgan from "morgan"
 import indexRouter from "./routes/index.js"
 import choicesRouter from "./routes/choices.js"
 import session from "express-session"
+import storyRouter from "./routes/story.js"
 
 const app = express()
 
@@ -28,7 +29,8 @@ nunjucks.configure("views", {
 })
 
 app.use("/", indexRouter)
-app.use("/choices", choicesRouter)
+// app.use("/choices", choicesRouter)
+app.use("/story", storyRouter)
 app.use(notFound)
 
 app.listen(3000, () => {

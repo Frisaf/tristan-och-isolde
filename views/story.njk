@@ -5,7 +5,16 @@
 <main>
     <h1>{{ title }}</h1>
     <p><em>{{ message }}</em></p>
-    <a href="/story_page/1">Continue</a>
+    
+    <ol class="choicesList">
+        {% for choice in choices %}
+            {% if not requirement %}
+                <li><button class="choiceBtn" onclick="location.href='/story/{{ choice.target }}'">{{ choice.text }}</button></li>
+            {% endif %}
+        {% else %}
+            <p>You reached the end! Or at least one of them...</p>
+        {% endfor %}
+    </ol>
 </main>
 
 {% endblock %}

@@ -54,7 +54,7 @@ footer {
     }
 }
 
-#restartBtn, #goBackBtn {
+#restartBtn, #goBackBtn, .choiceBtn {
     border: 1px solid transparent;
     background-color: rgb(38, 38, 38);
     padding: 10px;
@@ -66,15 +66,23 @@ footer {
     color: red;
 }
 
-#goBackBtn {
+#goBackBtn,.choiceBtn {
     color: var(--textWhite);
 }
 
-#restartBtn:hover, #goBackBtn:hover {
+#restartBtn:hover, #goBackBtn:hover, .choiceBtn:hover {
     cursor: pointer;
     border-color: red;
 }
 
-#restartBtn:active, #goBackBtn:active {
+#restartBtn:active, #goBackBtn:active, .choiceBtn:active {
     border-color: var(--textWhite);
+}
+
+.choicesList {
+    list-style: none;
+
+    button {
+        margin: 5px;
+    }
 }
