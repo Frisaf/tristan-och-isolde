@@ -2,7 +2,6 @@ import express from "express";
 import nunjucks from "nunjucks"
 import morgan from "morgan"
 import indexRouter from "./routes/index.js"
-import choicesRouter from "./routes/choices.js"
 import session from "express-session"
 import storyRouter from "./routes/story.js"
 

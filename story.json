@@ -322,14 +322,16 @@
         "text": "You walk back to the office. You offer the milk to Tristan, and he accepts it without giving it a second thought. You take a seat at your desk again and wait for Tristan's death to come.",
         "choices": [
             {
-                "target": 25,
-                "text": "Continue",
-                "requirement": 20
+                "requirement": [20, {
+                    "text": "Continue (told Brangäne)",
+                    "target": 25
+                }]
             },
             {
-                "target": 30,
-                "text": "Continue",
-                "requirement": 25
+                "requirement": [33, {
+                    "text": "Continue (did not tell Brangäne)",
+                    "target": 30
+                }]
             }
         ]
     },
@@ -350,14 +352,16 @@
         "text": "You stand up and walk over to Tristan. He thanks you for the lactose free milk.",
         "choices": [
             {
-                "target": 26,
-                "text": "Continue",
-                "requirement": 23
+                "requirement": [23, {
+                    "text": "Continue",
+                    "target": 27
+                }]
             },
             {
-                "target": 29,
-                "text": "Continue",
-                "requirement": 101
+                "requirement": [101, {
+                    "text": "Continue",
+                    "target": 29
+                }]
             }
         ]
     },

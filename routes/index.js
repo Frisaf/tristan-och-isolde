@@ -18,6 +18,15 @@ router.get("/prologue", (req, res) => {
     });
 });
 
-// req.session.history somewhere
+router.post("/restart", (req, res) => {
+    req.session.destroy(err => {
+        if (err) {
+            console.error("Couldn't destroy session:", err)
+            return res.status(500).json({error: "Couldn't restart :("})
+        }
+
+        res.json({ok: true})
+    })
+})
 
 export default router;

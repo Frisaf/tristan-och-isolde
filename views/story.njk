@@ -5,16 +5,28 @@
 <main>
     <h1>{{ title }}</h1>
     <p><em>{{ message }}</em></p>
+
+    {% if page_id == 100 %}
+        {% include "roll.njk" %}
+    {% endif %}
     
-    <ol class="choicesList">
-        {% for choice in choices %}
-            {% if not requirement %}
-                <li><button class="choiceBtn" onclick="location.href='/story/{{ choice.target }}'">{{ choice.text }}</button></li>
-            {% endif %}
-        {% else %}
-            <p>You reached the end! Or at least one of them...</p>
-        {% endfor %}
-    </ol>
+    {% if page_id != 100 %}
+        <ol class="choicesList">
+            {% for choice in choices %}
+                {% if not choice.requirement %}
+                    <li><button class="choiceBtn" onclick="location.href='/story/{{ choice.target }}'">{{ choice.text }}</button></li>
+                {% elif choice.requirement[0] in choice_id %}
+                    <li><button class="choiceBtn" onclick="location.href='/story/{{ choice.requirement[1].target }}'">{{ choice.requirement[1].text }}</button></li>
+                {% endif %}
+            {% else %}
+                <p>You reached the end! Or at least one of them...</p>
+                <p>Click the restart button below to go back home and start a new journey!</p>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <button class="choiceBtn" id="above10" onclick="location.href='/story/23'">Continue</button>
+        <button class="choiceBtn" id="below10" onclick="location.href='/story/101'">Continue</button>
+    {% endif %}
 </main>
 
 {% endblock %}

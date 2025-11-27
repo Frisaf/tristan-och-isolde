@@ -7,6 +7,7 @@ const story_file = JSON.parse((fs.readFileSync("./story.json")))
 router.use((req, res, next) => {
     if (!req.session.choices) {
         req.session.choices = []
+        req.session.choice_id = []
     }
     next()
 })
@@ -18,10 +19,13 @@ router.get("/:id", (req, res) => {
         res.render("story.njk", {
             title: page.title,
             message: page.text,
-            choices: page.choices
+            choices: page.choices,
+            choice_id: req.session.choice_id,
+            page_id: page.id
         })
 
         req.session.choices.push(page.title)
+        req.session.choice_id.push(page.id)
 
     }
 
@@ -33,7 +37,7 @@ router.get("/:id", (req, res) => {
 router.get("/", (req, res) => {
     res.render("choices.njk", {
         title: "Your choices",
-        choices: req.session.choices
+        choices: req.session.choices,
     })
 })
 
