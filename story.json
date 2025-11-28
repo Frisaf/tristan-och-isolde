@@ -323,13 +323,13 @@
         "choices": [
             {
                 "requirement": [20, {
-                    "text": "Continue (told Brangäne)",
+                    "text": "Continue",
                     "target": 25
                 }]
             },
             {
                 "requirement": [33, {
-                    "text": "Continue (did not tell Brangäne)",
+                    "text": "Continue",
                     "target": 30
                 }]
             }
