@@ -2,7 +2,6 @@ import express from "express";
 import fs from "fs";
 
 const router = express.Router();
-const story_file = JSON.parse((fs.readFileSync("./story.json")))
 
 router.get("/", (req, res) => {
     res.render("index.njk", {
