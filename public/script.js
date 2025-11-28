@@ -20,10 +20,6 @@ async function restart() {
     }
 }
 
-function go_back() {
-    window.history.go(-1)
-}
-
 function roll() {
     result = Math.ceil(Math.random() * 20);
     roll_result.textContent = result
@@ -41,7 +37,3 @@ function roll() {
 
 restart_button.addEventListener("click", restart)
 roll_button.addEventListener("click", roll)
-
-if (go_back_btn != null) {
-    go_back_btn.addEventListener("click", go_back)
-}

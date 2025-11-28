@@ -11,7 +11,7 @@
                 <li>{{ choice }}</li>
             {% endfor %}
         </ul>
-        <button id="goBackBtn">Go back</button>
+        <button id="goBackBtn" onclick="history.back()">Go back</button>
 
     {% else %}
         <p>You haven't started the story yet! Go back and press start to begin your epic adventure at Merkeware Inc.</p>
